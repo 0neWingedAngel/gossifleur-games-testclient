@@ -583,7 +583,7 @@ process.stdout.write("Building `data/teambuilder-tables.js`... ");
 			BattleTeambuilderTable[gen].items = items;
 			BattleTeambuilderTable[gen].formatSlices = formatSlices;
 			BattleTeambuilderTable[gen].nonstandardMoves = nonstandardMoves;
-			// BattleTeambuilderTable[gen].learnsets = {};
+			BattleTeambuilderTable[gen].learnsets = {};
 		}	else {
 			BattleTeambuilderTable[gen] = {};
 			if (genNum === 5) {
@@ -956,7 +956,7 @@ process.stdout.write("Building `data/teambuilder-tables.js`... ");
 		}
 	}
 
-	/*const BoingusOULearnsets = Dex.mod('gen9boingusou').data.Learnsets;
+	const BoingusOULearnsets = Dex.mod('gen9boingusou').data.Learnsets;
 	for (const id in BoingusOULearnsets) {
 		const species = Dex.mod('gen9boingusou').species.get(id);
 		if (species.isNonstandard && !['Unobtainable', 'CAP'].includes(species.isNonstandard)) continue;
@@ -965,7 +965,7 @@ process.stdout.write("Building `data/teambuilder-tables.js`... ");
 		for (const moveid in learnset) {
 			BattleTeambuilderTable['gen9boingusou'].learnsets[id][moveid] = '9';
 		}
-	}*/
+	}
 
 	const LGLearnsets = Dex.mod('gen7letsgo').data.Learnsets;
 	for (const id in LGLearnsets) {
