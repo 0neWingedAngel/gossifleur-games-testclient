@@ -583,7 +583,7 @@ process.stdout.write("Building `data/teambuilder-tables.js`... ");
 			BattleTeambuilderTable[gen].items = items;
 			BattleTeambuilderTable[gen].formatSlices = formatSlices;
 			BattleTeambuilderTable[gen].nonstandardMoves = nonstandardMoves;
-			BattleTeambuilderTable[gen].learnsets = {};
+			// BattleTeambuilderTable[gen].learnsets = {};
 		}	else {
 			BattleTeambuilderTable[gen] = {};
 			if (genNum === 5) {
